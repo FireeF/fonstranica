@@ -1,0 +1,224 @@
+
+/*navbar*/
+
+.navbar {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  font-family: 'montserrat' , sans-serif;
+  font-weight: 700;
+  z-index: 99999;
+}
+
+.logo img {
+  width: 3em;
+  height: 3em;
+}
+
+.right-links {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-family: 'montserrat' , sans-serif;
+  font-weight: 700;
+  animation-name: slideout;
+  animation-duration: 0.5s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+.right-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.right-links a:hover {
+  color: #fcbd48;
+}
+
+.right-links.active a {
+  opacity: 1;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-checkbox {
+  display: none;
+}
+
+.hamburger-icon {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  position: relative;
+  display: none; 
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+  content: '';
+  width: 35px;
+  height: 6px;
+  background-color: black;
+  position: absolute;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.hamburger-icon::before {
+  top: 8px;
+}
+
+.hamburger-icon::after {
+  top: 21px;
+}
+
+.hamburger-checkbox:checked + .navbar .right-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  max-height: max-content;
+  background-color: black;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.hamburger-checkbox:checked + .navbar .hamburger-icon::before {
+  transform: rotate(45deg) translate(0px, 10px);
+  background-color: #fff;
+}
+
+.hamburger-checkbox:checked + .navbar .hamburger-icon::after {
+  transform: rotate(-45deg) translate(-1px, -8px);
+  background-color: #fff;
+}
+
+.hamburger-checkbox:checked + .navbar .hamburger-icon {
+  background-color: transparent;
+}
+
+.hamburger-checkbox:checked + .navbar .hamburger-icon::before,
+.hamburger-checkbox:checked + .navbar .hamburger-icon::after {
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .hamburger-icon {
+      display: block;
+  }
+  .right-links {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: black;
+      font-size: 6vh;
+      padding-bottom: 20px;
+      z-index: 9999;
+      padding: 20px;
+      display: none;
+  }
+
+  .right-links.active {
+      display: flex;
+  }
+
+  .right-links a {
+      font-size: 1.2em;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 10px;
+  }
+
+  .hamburger {
+      display: block;
+  }
+
+  .hamburger-checkbox:checked + .navbar .right-links {
+      display: flex;
+  }
+}
+@keyframes slideout {
+0% {
+transform: translateX(100%);
+}
+100% {
+transform: translateX(0);
+}
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+
+}
+@keyframes slidein {
+0% {
+transform: translateX(-100%);
+}
+100% {
+transform: translateX(0);
+}
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+
+}
+  /*kraj navbara*/
+
+  /*selection za sve*/
+  ::selection {
+    background-color: #fcbd48;
+    color: black;
+  }
+  
+  ::-moz-selection {
+    background-color: #fcbd48;
+    color: black;
+  }
+  /* kraj selectiona za sve*/
+
+  /*custom scroll bar*/
+  *{
+    scrollbar-width: auto;
+    scrollbar-color: #fcbd48 rgb(219, 218, 218);
+  }
+  
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgb(219, 218, 218);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #fcbd48;
+    border-radius: 10px;
+    border: 3px solid rgb(219, 218, 218);
+  }
+ /* kraj custom scroll bara*/
+
+  html{
+    font-family: 'montserrat' , sans-serif;
+    overflow-x:hidden ; 
+  }
+ 
+  

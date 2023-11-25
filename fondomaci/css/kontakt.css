@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+   background-color:rgb(134, 3, 20);
+   
+}
+
+.nekaj{
+    display: block;
+   margin: auto ;
+   width: fit-content;
+   text-align: center;
+   color: white;
+}
+.nekaj h2{
+    font-size:2rem;
+}
+.nekaj h3{
+    font-size: 1.5rem;
+}
+
+.kontakt {
+    display: block;
+   margin: auto ;
+   width: fit-content;
+    flex-direction: column;
+    padding-bottom: 2%;
+    gap: 3rem;
+    color: white;
+}
+
+.formular {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1.3rem; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0.75rem; 
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    font-size: 1.1rem; 
+    background-color: rgb(134, 3, 20);
+    color: white;
+}
+
+
+
+.laliga{
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #c57906;
+    border:1px none wheat;
+    color: wheat;
+    cursor: pointer;
+    font-size: large;
+    display: block;
+    margin: auto ;
+  }
+  .laliga:hover{
+    background-color:#af7012;
+    transform: scale(1.1);
+    color: whitesmoke;
+  }
+  .laliga:active{
+    transform: scale(0.9);
+  }
+
+@media screen and (max-width: 768px) {
+    .kontakt{
+        padding-top: 40%;
+        
+    }
+    .nekaj iframe{
+        width: fit-content;
+        height: 40vh;
+    }
+  }

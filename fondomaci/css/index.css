@@ -1,0 +1,341 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(219, 218, 218);
+}
+
+.parallax {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-size: 2em;
+}
+
+.parallax1 {
+  background: linear-gradient(to bottom, #004D98 20%, #3d051c ); 
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.parallax2 {
+  background: linear-gradient(to bottom, #3d051c 30%, rgb(134, 3, 20));
+  background-attachment: fixed;
+}
+
+.parallax3 {
+  background: linear-gradient(to bottom, rgb(134, 3, 20) 30% , #816c1d  ); 
+  background-attachment: fixed;
+}
+
+.casa {
+  display: flex;
+  max-width: 95vw; 
+  width: 100%;
+  align-items: center;
+  padding-bottom: 10vh;
+  z-index: 1;
+}
+
+.tekst {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+.tekst h2 {
+  color: #EDBB00 ;
+  font-size: 100px;
+  text-transform:uppercase;
+  font-weight: 800;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}
+.tekst p{
+  color: rgb(163, 23, 23);
+  font-weight: 600;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+  animation-fill-mode: both;
+}
+.tekst a:hover{
+  color: #755d05 ;
+}
+.tekst a{
+  text-decoration: none;
+  color: #EDBB00 ;
+  font-weight: 600;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+  animation-fill-mode: both;
+}
+
+.tekst1 {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+ .tekst1 p{
+  color: #cfd2d6;
+  animation-name: slideout;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+ }
+ .tekst1 h1{
+  animation-name: slideout;
+  animation-duration: 1s;
+  animation-delay: 1.6s;
+  animation-fill-mode: both;
+ }
+
+
+.slika {
+  flex: 1;
+  overflow: hidden;
+}
+
+.slika img {
+  width: 100%;
+  height: auto;
+  display: block;
+  animation-name: slideout;
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
+}
+.barca {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.barca img{
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-delay: 1.4s;
+  animation-fill-mode: both;
+}
+.rollin {
+  max-width: 60%;
+}
+.blue{
+  color: #1786f5;
+  text-decoration: none;
+}
+
+.blue:hover{
+  color: #093968;
+}
+
+.blue:active{
+  transform: scale(0.9);
+}
+
+.animacija2 img{
+  animation-name: slideout;
+  animation-duration: 1s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+}
+
+.animacija1{
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-delay: 2.6s;
+  animation-fill-mode: both;
+}
+
+.laliga{
+  height: 50px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #c57906;
+  border:1px none wheat;
+  color: wheat;
+  cursor: pointer;
+  font-size: large;
+}
+.laliga:hover{
+  background-color:#af7012;
+  transform: scale(1.1);
+  color: whitesmoke;
+}
+.laliga:active{
+  transform: scale(0.9);
+}
+.liga{
+  margin-top: 30px;
+  height: 50px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #004D98;
+  border:1px none wheat;
+  color: wheat;
+  cursor: pointer;
+  font-size: large;
+}
+.liga:hover{
+  background-color:#093968;
+  transform: scale(1.1);
+  color: whitesmoke;
+}
+.liga:active{
+  transform: scale(0.9);
+}
+
+
+  .cetiriipo {
+    background-color: rgb(219, 218, 218);
+  }
+
+  .cetiri {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  .square {
+    width: 300px;
+    height: 300px;
+    margin: 0 15px;
+    border-radius: 35px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+
+  .square img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    border-radius: 25px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+
+
+  .square:hover img {
+    transform: translateY(-20px);
+  }
+
+  .square:hover {
+    transform: translateY(-10px);
+  }
+
+  .cetiriipo h2 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 50px;
+    font-weight: 800;
+  }
+
+  .cetiriipo h4 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .nz {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .nz p {
+    text-align: center;
+    font-size: 23px;
+    margin-left: 55px;
+    margin-right: 55px; 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .parallax {
+      height: auto;
+      padding: 20px 0;
+    }
+  
+    .casa {
+      padding-bottom: 5vh;
+    }
+  
+    .tekst h2 {
+      font-size: 30px;
+    }
+  
+    .tekst p,
+    .tekst a {
+      font-size: 16px;
+    }
+  
+    .barca {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .barca img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  
+    .tekst1 h1 {
+      font-size: 24px;
+    }
+  
+    .tekst1 p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  
+    .animacija2 img,
+    .animacija1 {
+      animation: none;
+    }
+  
+    .laliga,
+    .liga {
+      width: 100%;
+    }
+  
+    .cetiri {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .square {
+      width: 80%;
+      margin: 0 auto 20px;
+    }
+  
+    .square img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .cetiriipo h2,
+    .cetiriipo h4 {
+      font-size: 24px;
+    }
+  
+    .nz  {
+      display: none;
+    }
+  }

@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(219, 218, 218, 0,8);
+    font-family: 'Arial', sans-serif;
+    color: white;
+    
+    background-image: url("../img/stad.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.title {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #fccd34;
+    text-align: center;
+}
+
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.igrac-box {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    color: #030303;
+    animation-name: intro;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+    transition: transform 0.3s ease-in-out;
+}
+
+.igrac-box img {
+    border-radius: 10px;
+    max-width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.ime-igraca {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pozicija-igraca {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.opis-igraca {
+    font-size: 14px;
+}
+
+.igrac-box:hover img {
+    transform: translateY(-14px);
+}
+
+.igrac-box:hover {
+    transform: translateY(-8px);
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .igrac-box {
+        width: 100%; 
+        margin: 20px 0;
+    }
+}

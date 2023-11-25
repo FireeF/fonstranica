@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, rgb(163, 23, 23) 50%, #093968 50%);
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.legend img,
+.legend-text {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+
+.legend img {
+  object-fit: cover;
+  border-radius: 15px;
+  animation-name: intro;
+  animation-duration: 4s;
+  animation-delay: 0.3s;
+  transition: transform 0.3s ease-in-out;
+}
+
+.legend-text {
+  text-align: center;
+}
+
+.legend-text h3,
+.legend-text p {
+  color: white;
+  animation-name: intro;
+  animation-duration: 4s;
+  animation-delay: 0.3s;
+}
+
+.legend-text h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 4vw;
+}
+
+.legend-text p {
+  font-size: 3vw;
+}
+
+@keyframes intro {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .legend {
+      flex-direction: row;
+      align-items: stretch;
+  }
+
+  .legend img,
+  .legend-text {
+      width: 50%;
+  }
+
+  .legend:nth-child(odd) {
+      flex-direction: row-reverse;
+  }
+
+  .legend-text {
+      text-align: left;
+  }
+
+  .legend-text h3 {
+      font-size: 10vw;
+  }
+
+  .legend-text p {
+      font-size: 2vw;
+  }
+}
